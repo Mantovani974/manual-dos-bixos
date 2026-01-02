@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    text-align: center;
+    color: white;
+    margin-top: 10vh;
+    font-size: 3rem;
+    opacity: 0;
+    animation: fadeTitulo 1.5s ease forwards;
+}
+.img_titulo {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url("imgs/transferir.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    opacity: 0;
+    animation: fadeImagem 1.5s ease forwards;
+    animation-delay: 1.5s; 
+}
+/* ANIMAÇÕES */
+@keyframes fadeTitulo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeImagem {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
